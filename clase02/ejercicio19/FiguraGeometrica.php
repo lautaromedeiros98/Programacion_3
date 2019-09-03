@@ -5,11 +5,6 @@
         protected $_perimetro;
         protected $_superficie;
 
-        public function _construct()
-        {
-
-        }
-
         public function GetColor()
         {
             return $this->_color;

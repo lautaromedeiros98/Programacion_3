@@ -1,16 +1,16 @@
 <?php
-    include "FiguraGeometrica.php";
+    require_once "FiguraGeometrica.php";
 
     class Rectangulo extends FiguraGeometrica
     {
         protected $_ladoUno;
         protected $_ladoDos;        
 
-        public function __construct($ladoUno,$ladoDos)
+        public function __construct($l1,$l2)
         {
-            parent::_construct();
-            $this->_ladoUno=$laduUno;
-            $this->_ladoDos=$ladoDos;
+            $this->_color="red";
+            $this->_ladoUno=$l1;
+            $this->_ladoDos=$l2;
             $this->CalcularDatos();
         }
 
@@ -22,7 +22,8 @@
 
         public function Dibujar()
         {
-            return "";
+            
+            echo '<span style="color:green">********<br>********<br>********<br><br><br><br><br></span>';
         }
 
         public function ToString()
