@@ -56,7 +56,7 @@
             break;
             ///////////////////////////////////////////////////
             case "AgregarUsuario":
-            $rs = $con->query("INSERT INTO `usuarios`(`nombre`,`apellido`,`clave`, `perfil`, `estado`) VALUES (`".$nombre."`,`".$apellido."`,`".$clave."`,".$perfil.",".$estado.")");
+            $rs = $con->query("INSERT INTO `usuarios`(`nombre`,`apellido`,`clave`, `perfil`, `estado`) VALUES ('".$nombre."','".$apellido."','".$clave."',".$perfil.",".$estado.")");
             var_dump($con);
             break;
     }
